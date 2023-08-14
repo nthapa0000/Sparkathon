@@ -1,0 +1,24 @@
+Downloading the initial setup
+npx create-next-app@latest ./ (./ is to setup in the current repository)
+(this is created by vercel) 
+
+npm install @clerk/nextjs @uploadthing/react mongoose svix uploadthing
+@clerk/nextjs: for authentication
+@uploadthing/react: it is react package used it to upload profile images
+svix : for webhooks
+
+inside the app folder our whole next js app will be.
+
+npm install tailwindcss-animate
+as it will show that we are misiing this package
+
+This is to setup the Github repository 
+Create a new repository then write the following code in the terminal 
+echo "# threads" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/nthapa0000/Sparkathon.git
+git push -u origin main
+
