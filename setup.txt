@@ -1,3 +1,5 @@
+Name of the app will be WalmartUnity
+
 Downloading the initial setup
 npx create-next-app@latest ./ (./ is to setup in the current repository)
 (this is created by vercel) 
@@ -22,3 +24,9 @@ git branch -M main
 git remote add origin https://github.com/nthapa0000/Sparkathon.git
 git push -u origin main
 
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/
+NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/
+
+Specify the routes where you want to go after the sign in or sign up

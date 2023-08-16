@@ -1,21 +1,23 @@
+import React from "react"
+import type {Metadata} from "next"
 import { ClerkProvider } from "@clerk/nextjs"
 import { Inter } from "next/font/google"
 
-import '../global.css'
+import '../globals.css'
 
 // will specify different rules for the authentication routes
 //will be applicable only to these routes 
-export const metadata = {
-    title:'Threads',
-    description:'A Next.js 13 Meta Threads Application'
-}
-
 const inter = Inter({subsets:["latin"]})
 
-export default function RootLayout ({children
+export const metadata:Metadata = {
+    title:'WalmartUnity',
+    description:'A Next.js 13 Meta Threads Application',
+};
+
+export default function RootLayout ({children,
 }:{
     // types of prop
-    children:React.ReactNode
+    children: React.ReactNode;
 }) {
     return (
         <ClerkProvider>
